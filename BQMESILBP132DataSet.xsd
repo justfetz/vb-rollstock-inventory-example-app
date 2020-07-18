@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BQMESILBP132DataSet" targetNamespace="http://tempuri.org/BQMESILBP132DataSet.xsd" xmlns:mstns="http://tempuri.org/BQMESILBP132DataSet.xsd" xmlns="http://tempuri.org/BQMESILBP132DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="BQMESILBP132ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BQMESILBP132ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.RollStockExampleApp.My.MySettings.GlobalReference.Default.BQMESILBP132ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RollstockTargetTableAdapter" GeneratorDataComponentClassName="RollstockTargetTableAdapter" Name="RollstockTarget" UserDataComponentName="RollstockTargetTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BQMESILBP132ConnectionString (MySettings)" DbObjectName="BQMESILBP132.dbo.RollstockTarget" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PaperGradeID FROM dbo.RollstockTarget</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PaperGradeID" DataSetColumn="PaperGradeID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BQMESILBP132DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BQMESILBP132DataSet" msprop:Generator_UserDSName="BQMESILBP132DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RollstockTarget" msprop:Generator_TableClassName="RollstockTargetDataTable" msprop:Generator_TableVarName="tableRollstockTarget" msprop:Generator_TablePropName="RollstockTarget" msprop:Generator_RowDeletingName="RollstockTargetRowDeleting" msprop:Generator_RowChangingName="RollstockTargetRowChanging" msprop:Generator_RowEvHandlerName="RollstockTargetRowChangeEventHandler" msprop:Generator_RowDeletedName="RollstockTargetRowDeleted" msprop:Generator_UserTableName="RollstockTarget" msprop:Generator_RowChangedName="RollstockTargetRowChanged" msprop:Generator_RowEvArgName="RollstockTargetRowChangeEvent" msprop:Generator_RowClassName="RollstockTargetRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PaperGradeID" msprop:Generator_ColumnVarNameInTable="columnPaperGradeID" msprop:Generator_ColumnPropNameInRow="PaperGradeID" msprop:Generator_ColumnPropNameInTable="PaperGradeIDColumn" msprop:Generator_UserColumnName="PaperGradeID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
